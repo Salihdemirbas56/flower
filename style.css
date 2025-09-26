@@ -989,7 +989,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 /* 📱 Telefon (600px altı) → biraz daha büyük yap */
 @media (max-width: 600px) {
   .flowers {
-    transform: scale(0.8); /* telefonda büyüsün */
+    transform: scale(0.13); /* telefonda büyüsün */
   }
 }
 
