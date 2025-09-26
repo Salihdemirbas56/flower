@@ -986,8 +986,24 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 .not-loaded * {
   animation-play-state: paused !important;
 }
+/* 📱 Telefon (600px altı) → biraz daha büyük yap */
 @media (max-width: 600px) {
   .flowers {
-    transform: scale(0.5); /* küçültme oranı */
+    transform: scale(0.8); /* telefonda büyüsün */
   }
+}
+
+/* 💻 Tablet (601px - 1024px arası) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .flowers {
+    transform: scale(0.9);
   }
+}
+
+/* 🖥️ Büyük ekran (1025px üstü) */
+@media (min-width: 1025px) {
+  .flowers {
+    transform: scale(1); /* PC’de tam boy */
+  }
+}
+
