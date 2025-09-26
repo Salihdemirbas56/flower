@@ -18,6 +18,7 @@ body {
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
+  
 }
 
 .night {
@@ -981,6 +982,12 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
     transform: scale(0);
   }
 }
+
 .not-loaded * {
   animation-play-state: paused !important;
 }
+@media (max-width: 600px) {
+  .flowers {
+    transform: scale(0.5); /* küçültme oranı */
+  }
+  }
